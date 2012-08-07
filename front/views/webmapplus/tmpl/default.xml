@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Locations Map Layout">
+		<message>
+			<![CDATA[STANDARD LOCATIONS MAP LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Standard Locations Map Layout</name>
+		<description>STANDARD LOCATIONS MAP LAYOUT DESC</description>
+		<url addpath="/administrator/components/com_webmapplus/elements">
+			<param name="category" type="category" default="0" label="Select Category" description="A category to display" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

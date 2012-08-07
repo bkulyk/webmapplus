@@ -1,0 +1,75 @@
+Version 1.0.0 - 06/25/2009
+* Initial Release
+
+Version 1.0.1 - 07/02/2009
+* Fixed IE 7 CSS Bug with balloon location photo
+* Added warning to admin panel if Google Maps API key is not set
+
+Version 1.0.2 - 07/05/2009 
+* Fixed IE 6 CSS Bug with balloon location photo 
+* Add PNG fix so that markers appear properly in IE 6
+* Fixed bug in install SQL
+
+Version 1.1.0 - 07/15/2009
+* Added Street View to Info Window for Location marker on Multi Location view
+* Added Street View to Location view
+* Added contact form to Location view
+* Added Text Area Attribute
+* Removed Telephone Attribute (Telephone formatting must be entered manually)
+* Added Default Country Parameter
+* Added CSV Upload/Download
+* Added Meta Tag field to the Location entry view
+* Added Wikipedia and Panoramio layers to Google Maps
+* Added Limits and Pagination for Location listings on the Multi Location view
+* Added Custom Marker Wizard
+* Fixed bug were reinstall of component would throw error
+
+Version 1.1.1 - 07/15/2009
+* Fixed Bug where is ClientLocation was undefined would cause the script to not load
+* Added ability to disable InfoWindow on marker hover
+* Added parameter to display Street View on Locations Map and / or Location details page
+
+Version 1.1.2 - 07/22/2009
+* Changed data type of zip coloumn in #__webmapplus_locations from int to char
+  fixing bug with non-numeric zip codes and zip codes with leading 0's
+  
+Version 1.1.3 - 07/22/2009
+* Fixed problem with install.webmapplus.php where the zip column was not updated
+* Moved install.webmapplus.php to root of zip file to fix problems with it not being copied properly
+* Added test to make sure that Services_JSON does not exist before requiring JSON helper.
+
+Version 1.1.4 - 07/23/2009
+* Fixed bug in install.webmapplus.php were marker types were not being added to the database
+
+Version 1.2.0 - 07/31/2009
+* Added Categories
+* Added front-end category filter
+* Added parameter to toggle Zip code search and range drop down
+* Added error checking to location add/edit
+* Readded marker letters on Multi-location view
+* Added dots for paginated listings on multi-location view
+* Overhauled install script
+* Fixed bug with UTF-8 encoding on geocoding requests
+* Fixed bug were reinstall of component would throw error
+
+Version 1.2.1 - 08/03/2009
+* Fixed regression of zip code bug that was fixed in 1.1.2.
+* Added error display on CSV upload.
+* Attribute type drop down now works properly.
+* Added more verbosity during install.
+
+Version 1.2.2 - 08/10/2009
+* Fixed bug with marker icon not being display under certain conditions with categories
+* Fixed bug with map UI options where mapControlers were set to small
+
+Version 1.5.0 - 10/19/2009
+* Various Bug Fixes
+* Added Custom Street View (Pano)
+* Added HTML Link attribute type
+* Added Static Directions
+* Added Search Frontend View
+* Added Support for new WMP module
+* Removed requirement of Address 1 and City
+* Fixed manual coordinate bug on save
+* Fixed regression of old NA location picture
+

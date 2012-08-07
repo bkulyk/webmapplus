@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <fieldset name='component' label='General Settings' description=''>
+    <!--<params addpath="/administrator/components/com_webmapplus/elements">-->
+    <!--<field name="@webmapplus" type="webmapplushead" default="GENRAL_SETTINGS_LABEL" menu="hide"/>-->
+    <field type="text" name="max_display_locations" size="10" default="25" label="Maximum Visible Locations" description="Maximum locations to display in the left hand side panel, 0 will display all locations" menu="hide"/>
+    <field name="default_country" type="list" default="US" label="Default Country" description="The default country to use when creating a new location">
+      <option value="AF">Afghanistan</option>
+      <option value="AL">Albania</option>
+      <option value="DZ">Algeria</option>
+      <option value="AS">American Samoa</option>
+      <option value="AD">Andorra</option>
+      <option value="AO">Angola</option>
+      <option value="AI">Anguilla</option>
+      <option value="AQ">Antarctica</option>
+      <option value="AG">Antigua and Barbuda</option>
+      <option value="AR">Argentina</option>
+      <option value="AM">Armenia</option>
+      <option value="AW">Aruba</option>
+      <option value="AU">Australia</option>
+      <option value="AT">Austria</option>
+      <option value="AZ">Azerbaijan</option>
+      <option value="BS">Bahamas</option>
+      <option value="BH">Bahrain</option>
+      <option value="BD">Bangladesh</option>
+      <option value="BB">Barbados</option>
+      <option value="BY">Belarus</option>
+      <option value="BE">Belgium</option>
+      <option value="BZ">Belize</option>
+      <option value="BJ">Benin</option>
+      <option value="BM">Bermuda</option>
+      <option value="BT">Bhutan</option>
+      <option value="BO">Bolivia</option>
+      <option value="BA">Bosnia and Herzegovina</option>
+      <option value="BW">Botswana</option>
+      <option value="BV">Bouvet Island</option>
+      <option value="BR">Brazil</option>
+      <option value="IO">British Indian Ocean Territory</option>
+      <option value="BN">Brunei Darussalam</option>
+      <option value="BG">Bulgaria</option>
+      <option value="BF">Burkina Faso</option>
+      <option value="BI">Burundi</option>
+      <option value="KH">Cambodia</option>
+      <option value="CM">Cameroon</option>
+      <option value="CA">Canada</option>
+      <option value="CV">Cape Verde</option>
+      <option value="KY">Cayman Islands</option>
+      <option value="CF">Central African Republic</option>
+      <option value="TD">Chad</option>
+      <option value="CL">Chile</option>
+      <option value="CN">China</option>
+      <option value="CX">Christmas Island</option>
+      <option value="CC">Cocos (Keeling) Islands</option>
+      <option value="CO">Colombia</option>
+      <option value="KM">Comoros</option>
+      <option value="CG">Congo</option>
+      <option value="CD">Congo, the Democratic Republic of the</option>
+      <option value="CK">Cook Islands</option>
+      <option value="CR">Costa Rica</option>
+      <option value="CI">Cote D'Ivoire</option>
+      <option value="HR">Croatia</option>
+      <option value="CU">Cuba</option>
+      <option value="CY">Cyprus</option>
+      <option value="CZ">Czech Republic</option>
+      <option value="DK">Denmark</option>
+      <option value="DJ">Djibouti</option>
+      <option value="DM">Dominica</option>
+      <option value="DO">Dominican Republic</option>
+      <option value="EC">Ecuador</option>
+      <option value="EG">Egypt</option>
+      <option value="SV">El Salvador</option>
+      <option value="GQ">Equatorial Guinea</option>
+      <option value="ER">Eritrea</option>
+      <option value="EE">Estonia</option>
+      <option value="ET">Ethiopia</option>
+      <option value="FK">Falkland Islands (Malvinas)</option>
+      <option value="FO">Faroe Islands</option>
+      <option value="FJ">Fiji</option>
+      <option value="FI">Finland</option>
+      <option value="FR">France</option>
+      <option value="GF">French Guiana</option>
+      <option value="PF">French Polynesia</option>
+      <option value="TF">French Southern Territories</option>
+      <option value="GA">Gabon</option>
+      <option value="GM">Gambia</option>
+      <option value="GE">Georgia</option>
+      <option value="DE">Germany</option>
+      <option value="GH">Ghana</option>
+      <option value="GI">Gibraltar</option>
+      <option value="GR">Greece</option>
+      <option value="GL">Greenland</option>
+      <option value="GD">Grenada</option>
+      <option value="GP">Guadeloupe</option>
+      <option value="GU">Guam</option>
+      <option value="GT">Guatemala</option>
+      <option value="GN">Guinea</option>
+      <option value="GW">Guinea-Bissau</option>
+      <option value="GY">Guyana</option>
+      <option value="HT">Haiti</option>
+      <option value="HM">Heard Island and Mcdonald Islands</option>
+      <option value="VA">Holy See (Vatican City State)</option>
+      <option value="HN">Honduras</option>
+      <option value="HK">Hong Kong</option>
+      <option value="HU">Hungary</option>
+      <option value="IS">Iceland</option>
+      <option value="IN">India</option>
+      <option value="ID">Indonesia</option>
+      <option value="IR">Iran, Islamic Republic of</option>
+      <option value="IQ">Iraq</option>
+      <option value="IE">Ireland</option>
+      <option value="IL">Israel</option>
+      <option value="IT">Italy</option>
+      <option value="JM">Jamaica</option>
+      <option value="JP">Japan</option>
+      <option value="JO">Jordan</option>
+      <option value="KZ">Kazakhstan</option>
+      <option value="KE">Kenya</option>
+      <option value="KI">Kiribati</option>
+      <option value="KP">Korea, Democratic People's Republic of</option>
+      <option value="KR">Korea, Republic of</option>
+      <option value="KW">Kuwait</option>
+      <option value="KG">Kyrgyzstan</option>
+      <option value="LA">Lao People's Democratic Republic</option>
+      <option value="LV">Latvia</option>
+      <option value="LB">Lebanon</option>
+      <option value="LS">Lesotho</option>
+      <option value="LR">Liberia</option>
+      <option value="LY">Libyan Arab Jamahiriya</option>
+      <option value="LI">Liechtenstein</option>
+      <option value="LT">Lithuania</option>
+      <option value="LU">Luxembourg</option>
+      <option value="MO">Macao</option>
+      <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+      <option value="MG">Madagascar</option>
+      <option value="MW">Malawi</option>
+      <option value="MY">Malaysia</option>
+      <option value="MV">Maldives</option>
+      <option value="ML">Mali</option>
+      <option value="MT">Malta</option>
+      <option value="MH">Marshall Islands</option>
+      <option value="MQ">Martinique</option>
+      <option value="MR">Mauritania</option>
+      <option value="MU">Mauritius</option>
+      <option value="YT">Mayotte</option>
+      <option value="MX">Mexico</option>
+      <option value="FM">Micronesia, Federated States of</option>
+      <option value="MD">Moldova, Republic of</option>
+      <option value="MC">Monaco</option>
+      <option value="MN">Mongolia</option>
+      <option value="MS">Montserrat</option>
+      <option value="MA">Morocco</option>
+      <option value="MZ">Mozambique</option>
+      <option value="MM">Myanmar</option>
+      <option value="NA">Namibia</option>
+      <option value="NR">Nauru</option>
+      <option value="NP">Nepal</option>
+      <option value="NL">Netherlands</option>
+      <option value="AN">Netherlands Antilles</option>
+      <option value="NC">New Caledonia</option>
+      <option value="NZ">New Zealand</option>
+      <option value="NI">Nicaragua</option>
+      <option value="NE">Niger</option>
+      <option value="NG">Nigeria</option>
+      <option value="NU">Niue</option>
+      <option value="NF">Norfolk Island</option>
+      <option value="MP">Northern Mariana Islands</option>
+      <option value="NO">Norway</option>
+      <option value="OM">Oman</option>
+      <option value="PK">Pakistan</option>
+      <option value="PW">Palau</option>
+      <option value="PS">Palestinian Territory, Occupied</option>
+      <option value="PA">Panama</option>
+      <option value="PG">Papua New Guinea</option>
+      <option value="PY">Paraguay</option>
+      <option value="PE">Peru</option>
+      <option value="PH">Philippines</option>
+      <option value="PN">Pitcairn</option>
+      <option value="PL">Poland</option>
+      <option value="PT">Portugal</option>
+      <option value="PR">Puerto Rico</option>
+      <option value="QA">Qatar</option>
+      <option value="RE">Reunion</option>
+      <option value="RO">Romania</option>
+      <option value="RU">Russian Federation</option>
+      <option value="RW">Rwanda</option>
+      <option value="SH">Saint Helena</option>
+      <option value="KN">Saint Kitts and Nevis</option>
+      <option value="LC">Saint Lucia</option>
+      <option value="PM">Saint Pierre and Miquelon</option>
+      <option value="VC">Saint Vincent and the Grenadines</option>
+      <option value="WS">Samoa</option>
+      <option value="SM">San Marino</option>
+      <option value="ST">Sao Tome and Principe</option>
+      <option value="SA">Saudi Arabia</option>
+      <option value="SN">Senegal</option>
+      <option value="CS">Serbia and Montenegro</option>
+      <option value="SC">Seychelles</option>
+      <option value="SL">Sierra Leone</option>
+      <option value="SG">Singapore</option>
+      <option value="SK">Slovakia</option>
+      <option value="SI">Slovenia</option>
+      <option value="SB">Solomon Islands</option>
+      <option value="SO">Somalia</option>
+      <option value="ZA">South Africa</option>
+      <option value="GS">South Georgia and the South Sandwich Islands</option>
+      <option value="ES">Spain</option>
+      <option value="LK">Sri Lanka</option>
+      <option value="SD">Sudan</option>
+      <option value="SR">Suriname</option>
+      <option value="SJ">Svalbard and Jan Mayen</option>
+      <option value="SZ">Swaziland</option>
+      <option value="SE">Sweden</option>
+      <option value="CH">Switzerland</option>
+      <option value="SY">Syrian Arab Republic</option>
+      <option value="TW">Taiwan, Province of China</option>
+      <option value="TJ">Tajikistan</option>
+      <option value="TZ">Tanzania, United Republic of</option>
+      <option value="TH">Thailand</option>
+      <option value="TL">Timor-Leste</option>
+      <option value="TG">Togo</option>
+      <option value="TK">Tokelau</option>
+      <option value="TO">Tonga</option>
+      <option value="TT">Trinidad and Tobago</option>
+      <option value="TN">Tunisia</option>
+      <option value="TR">Turkey</option>
+      <option value="TM">Turkmenistan</option>
+      <option value="TC">Turks and Caicos Islands</option>
+      <option value="TV">Tuvalu</option>
+      <option value="UG">Uganda</option>
+      <option value="UA">Ukraine</option>
+      <option value="AE">United Arab Emirates</option>
+      <option value="GB">United Kingdom</option>
+      <option value="US">United States</option>
+      <option value="UM">United States Minor Outlying Islands</option>
+      <option value="UY">Uruguay</option>
+      <option value="UZ">Uzbekistan</option>
+      <option value="VU">Vanuatu</option>
+      <option value="VE">Venezuela</option>
+      <option value="VN">Viet Nam</option>
+      <option value="VG">Virgin Islands, British</option>
+      <option value="VI">Virgin Islands, U.s.</option>
+      <option value="WF">Wallis and Futuna</option>
+      <option value="EH">Western Sahara</option>
+      <option value="YE">Yemen</option>
+      <option value="ZM">Zambia</option>
+      <option value="ZW">Zimbabwe</option>
+    </field>
+    <field name="units" type="radio" default="0" label="Standard Units" description="Standard units to measure distance">
+      <option value="0">Miles</option>
+      <option value="1">Km</option>
+    </field>
+  </fieldset>
+  <fieldset name='wmp_gm' label='Google Maps Settings' description=''>
+    <!--<field name="@webmapplus" type="webmapplushead" default="GOOGLE_MAPS_SETTINGS_LABEL" menu="hide"/>-->
+    <field type="gmapskey" name="gmaps_api_key" size="90" label="Google Maps API Key" description="Google Mapis API Key for your domain" menu="hide"/>
+    <field name="map_controls" type="list" default="auto" label="Pan/Zoom Control Type" description="Pan/Zoom Control Type and Visibility">
+      <option value="auto">Auto</option>
+      <option value="small">Small</option>
+      <option value="large">Large</option>
+      <option value="none">None</option>
+    </field>
+    <field name="map_basic_map" type="radio" default="1" label="Basic Map Button" description="Visibility for the standard map button (default map view)">
+      <!--BASIC_MAP_BUTTON_DESC-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="map_satellite_map" type="radio" default="1" label="Satellite Map" description="Visibility for the satellite map (if hidden, will not be able to view map in this style)">
+      <!--<field name="map_satellite_map" type="radio" default="1" label="Satellite Map" description="SATELLITE_MAP_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="map_hybrid_map" type="radio" default="1" label="Hybrid Map Button" description="Visibility for the hybrid map (if hidden, will not be able to view map in this style)">
+      <!--<field name="map_hybrid_map" type="radio" default="1" label="Hybrid Map Button" description="HYBRID_MAP_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="map_physical_map" type="radio" default="0" label="Physical Map Button" description="Visibility for the physical map (if hidden, will not be able to view map in this style)">
+      <!--<field name="map_physical_map" type="radio" default="0" label="Physical Map Button" description="PHYSICAL_MAP_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="map_scroll_wheel" type="radio" default="1" label="Google Map Scroll Wheel" description="Scroll Wheel on Mouse will control Map Zoom">
+      <option value="0">Disable</option>
+      <option value="1">Enable</option>
+    </field>
+    <field name="map_scalecontrol" type="radio" default="1" label="Measurement Scale Control" description="Measurement Scale Control">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+  </fieldset>
+  <fieldset name='wmp_gml' label='Google Maps Layer' description=''>
+    <!--<field name="@spacer" type="spacer" default="" label="" description="" menu="hide"/>
+    <param name="@webmapplus" type="webmapplushead" default="GOOGLE MAPS LAYER"/>-->
+    <field name="wikipedia_layer" type="list" default="auto" label="Wikipedia Layer" description="Include Geotagged Wikipedia Landmarks in your map">
+      <option value="none">None</option>
+      <option value="en">English</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+    </field>
+    <field name="wikipedia_zoom_layer" type="list" default="15" label="Wikipedia Zoom Level" description="The zoom level at which the Wikipedia layer will be disabled, 18 is the max zoom level, setting the max zoom level to 1 is equivalent to turning off the layer">
+      <!--<field name="wikipedia_zoom_layer" type="list" default="15" label="Wikipedia Zoom Level" description="WIKIPEDIA_ZOOM_LEVEL_DESC">-->
+      <option value="1">Zoom Level 1</option>
+      <option value="2">Zoom Level 2</option>
+      <option value="3">Zoom Level 3</option>
+      <option value="4">Zoom Level 4</option>
+      <option value="5">Zoom Level 5</option>
+      <option value="6">Zoom Level 6</option>
+      <option value="7">Zoom Level 7</option>
+      <option value="8">Zoom Level 8</option>
+      <option value="9">Zoom Level 9</option>
+      <option value="10">Zoom Level 10</option>
+      <option value="11">Zoom Level 11</option>
+      <option value="12">Zoom Level 12</option>
+      <option value="13">Zoom Level 13</option>
+      <option value="14">Zoom Level 14</option>
+      <option value="15">Zoom Level 15</option>
+      <option value="16">Zoom Level 16</option>
+      <option value="17">Zoom Level 17</option>
+      <option value="18">Zoom Level 18</option>
+    </field>
+    <field name="panoramio_layer" type="radio" default="1" label="Panoramio Photo Layer" description="Display all photos from panoramio.com in your map">
+      <!--<field name="panoramio_layer" type="radio" default="1" label="Panoramio Photo Layer" description="PANORAMIO_LAYER_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    
+  </fieldset>
+  <fieldset name='wmp_loc_map' label='Location Map Settings' description=''>
+    <!--<param name="@spacer" type="spacer" default="" label="" description="" menu="hide"/>
+    <param name="@webmapplus" type="webmapplushead" default="WEBMAPPLUS_LOCATIONS_MAP_SETTINGS_LABEL" menu="hide"/>-->
+    <field name="map_category_filter" type="radio" default="0" label="Category Filter" description="Show category filter, allows user to select only a certain category of locations">
+      <!--<param name="map_category_filter" type="radio" default="0" label="Category Filter" description="CATEGORY_FILTER_DESC">-->
+      <option value="0">Off</option>
+      <option value="1">On</option>
+    </field>
+    <field name="map_search" type="radio" default="1" label="Search Form" description="Show Search Form">
+      <!--<param name="map_search" type="radio" default="1" label="Search Form" description="SEARCH_FORM_DESC">-->
+      <option value="0">Off</option>
+      <option value="1">On</option>
+    </field>
+    <field name="map_search_range" type="radio" default="1" label="Range Field" description="Show Range Field on Search Form">
+      <!--<param name="map_search_range" type="radio" default="1" label="Range Field" description="SEARCH_RANGE_FIELD_DESC">-->
+      <option value="0">Off</option>
+      <option value="1">On</option>
+    </field>
+    <field name="map_search_auto_locate" type="radio" default="1" label="Prepopulate Location Field" description="Prepopulate Search Form with the location of the end-user of your website">
+      <!--<param name="map_search_auto_locate" type="radio" default="1" label="AUTO_LOCATION_FIELD_LABEL" description="AUTO_LOCATION_FIELD_DESC">-->
+      <option value="0">Off</option>
+      <option value="1">On</option>
+    </field>
+  </fieldset>
+  <fieldset name='wmp_static' label='Static Directions' description=''>
+    <!--<param name="@spacer" type="spacer" default="" label="" description="" menu="hide"/>
+    <param name="@webmapplus" type="webmapplushead" default="STATIC_DIRECTIONS_LABEL"/>-->
+    <field name="staticDir" type="radio" default="0" label="Static Directions" description="If enabled static directions displays a link that will show directions to a fixed point from the location.">
+      <!--<param name="staticDir" type="radio" default="0" label="STATIC_DIR_LABEL" description="STATIC_DIR_DESC">-->
+      <option value="0">Disable</option>
+      <option value="1">Enable</option>
+    </field>
+    <field type="text" name="staticDirAddr" label="Static Directions Address" description="If enabled static directions displays a link that will show directions to a fixed point from the location." />
+    <!--<field type="text" name="staticDirAddr" label="STATIC_DIR_ADDR_LABEL" description="STATIC_DIR_ADDR_DESC" />-->
+    <field type="text" name="staticDirLabel" label="Static Directions Link Label" description="A short description of the end point. Will be appended to Directions to to create a link. (e.g. Directions to LAX)" />
+    <!--<field type="text" name="staticDirLabel" label="STATIC_DIR_LABEL_LABEL" description="STATIC_DIR_LABEL_DESC" />-->
+  </fieldset>
+  <fieldset name='wmp_gmaps' label='On Hover Baloon Settings' description=''>
+    <!--<param name="@spacer" type="spacer" default="" label="" description="" menu="hide"/>
+    <param name="@webmapplus" type="webmapplushead" default="LOCATION_BALLOON_ON_HOVER_SETTINGS_LABEL"/>-->
+    <field name="location_balloon_hover" type="radio" default="1" label="Balloon on Hover" description="Show the balloon when hovering over the marker">
+      <!--<param name="location_balloon_hover" type="radio" default="1" label="BALOON_ON_HOVER_LABEL" description="Balloon on Hover DESC">-->
+      <option value="0">Disable</option>
+      <option value="1">Enable</option>
+    </field>
+    <field name="location_balloon_hover_name" type="radio" default="1" label="Display Name" description="Show the name of the location">
+      <!--<field name="location_balloon_hover_name" type="radio" default="1" label="DISPLAY_NAME_LABEL" description="DISPLAY_NAME_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_hover_address1" type="radio" default="1" label="Display Address1" description="Show the Address1 of the location">
+      <!--<field name="location_balloon_hover_address1" type="radio" default="1" label="Display Address1" description="DISPLAY ADDRESS1 DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_hover_address2" type="radio" default="1" label="Display Address2" description="Show the Address2 of the location">
+      <!--<field name="location_balloon_hover_address2" type="radio" default="1" label="Display Address2" description="DISPLAY ADDRESS2 DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_hover_city" type="radio" default="1" label="Display City" description="Show the city of the location">
+      <!--<field name="location_balloon_hover_city" type="radio" default="1" label="Display City" description="DISPLAY CITY DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_hover_state" type="radio" default="1" label="Display State" description="Show the state of the location">
+      <!--<field name="location_balloon_hover_state" type="radio" default="1" label="Display State" description="DISPLAY STATE DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_hover_zip" type="radio" default="1" label="Display Zip/Postal Code" description="Show the zip/postal code of the location">
+      <!--<field name="location_balloon_hover_zip" type="radio" default="1" label="Display Zip/Postal Code" description="DISPLAY ZIP CODE DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_hover_country" type="radio" default="1" label="Display Country" description="">
+      <!--<field name="location_balloon_hover_country" type="radio" default="1" label="DISPLAY_COUNTRY" description="DISPLAY COUNTRY DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_hover_photo" type="radio" default="1" label="Display Location Photo" description="Show the photo of location">
+      <!--<field name="location_balloon_hover_photo" type="radio" default="1" label="DISPLAY_PHOTO_LABEL" description="DISPLAY PHOTO DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <!--<param name="@spacer" type="spacer" default="" label="" description=""/>
+    <param name="@webmapplus" type="webmapplushead" default="LOCATION_BALLOON_ON_CLICK_SETTINGS_LABEL"/>-->
+  </fieldset>
+  <fieldset name='wmp_baloon' label='Location Baloon Settings' description=''>
+    <field name="location_balloon_click_name" type="radio" default="1" label="Display Name" description="">
+      <!--<field name="location_balloon_click_name" type="radio" default="1" label="Display Name" description="DISPLAY_NAME_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_address1" type="radio" default="1" label="Display Address1" description="Show the Address1 of the location">
+      <!--<field name="location_balloon_click_address1" type="radio" default="1" label="Display Address1" description="DISPLAY ADDRESS1 DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_address2" type="radio" default="1" label="Display Address2" description="Show the Addressw of the location">
+      <!--<field name="location_balloon_click_address2" type="radio" default="1" label="Display Address2" description="DISPLAY ADDRESS2 DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_city" type="radio" default="1" label="Display City" description="Show the city of the location">
+      <!--<field name="location_balloon_click_city" type="radio" default="1" label="Display City" description="DISPLAY CITY DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_state" type="radio" default="1" label="Display State" description="Show the state of the location">
+      <!--<field name="location_balloon_click_state" type="radio" default="1" label="Display State" description="DISPLAY STATE DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_zip" type="radio" default="1" label="Display Zip/Postal Code" description="Show the zip/postal code of the location">
+      <!-- <field name="location_balloon_click_zip" type="radio" default="1" label="Display Zip/Postal Code" description="DISPLAY ZIP CODE DESC"> -->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_country" type="radio" default="1" label="Display Country" description="">
+      <!--<field name="location_balloon_click_country" type="radio" default="1" label="DISPLAY_COUNTRY" description="DISPLAY COUNTRY DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_photo" type="radio" default="1" label="Display Location Photo" description="Show the photo of location">
+      <!--<field name="location_balloon_click_photo" type="radio" default="1" label="DISPLAY_PHOTO_LABEL" description="DISPLAY PHOTO DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_more_link" type="radio" default="1" label="Display More Link" description="Show the link to the location details page">
+      <!--<field name="location_balloon_click_more_link" type="radio" default="1" label="MORE_LINK_LABEL" description="DISPLAY MORE LINK DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_balloon_click_street_view" type="radio" default="1" label="Display Steet View" description="Show Street View for you location(s)">
+      <!--<field name="location_balloon_click_street_view" type="radio" default="1" label="STREET_VIEW_LABEL" description="DISPLAY_STREET_VIEW_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+  </fieldset>
+  <fieldset name='wmp_listing' label='Listing Settings' description=''>
+    <!--<field name="@spacer" type="spacer" default="" label="" description=""/>
+    <field name="@webmapplus" type="webmapplushead" default="LOCATION_LISTING_SETTINGS_LABEL"/>-->
+    <field name="location_listing_name" type="radio" default="1" label="Display Name" description="Show the name of the location">
+      <!--<field name="location_listing_name" type="radio" default="1" label="Display Name" description="DISPLAY_NAME_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_listing_address1" type="radio" default="1" label="Display Address1" description="Show the Address1 of the location">
+      <!--<field name="location_listing_address1" type="radio" default="1" label="Display Address1" description="DISPLAY ADDRESS1 DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_listing_address2" type="radio" default="1" label="Display Address2" description="Show the Address2 of the location">
+      <!--<field name="location_listing_address2" type="radio" default="1" label="Display Address2" description="DISPLAY ADDRESS2 DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_listing_city" type="radio" default="1" label="Display City" description="Show the city of the location">
+      <!--<field name="location_listing_city" type="radio" default="1" label="Display City" description="DISPLAY CITY DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_listing_state" type="radio" default="1" label="Display State" description="Show the state of the location">
+      <!--<field name="location_listing_state" type="radio" default="1" label="Display State" description="DISPLAY STATE DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_listing_zip" type="radio" default="1" label="Display Zip/Postal Code" description="Show the zip/postal code of the location">
+      <!--<field name="location_listing_zip" type="radio" default="1" label="Display Zip/Postal Code" description="DISPLAY ZIP CODE DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_listing_country" type="radio" default="1" label="Display Country" description="">
+      <!--<field name="location_listing_country" type="radio" default="1" label="DISPLAY_COUNTRY" description="DISPLAY COUNTRY DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_listing_photo" type="radio" default="1" label="Display Location Photo" description="Show the photo of location">
+      <!--<field name="location_listing_photo" type="radio" default="1" label="DISPLAY_PHOTO_LABEL" description="DISPLAY PHOTO DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <field name="location_listing_more_link" type="radio" default="1" label="Display More Link" description="Show the link to the location details page">
+      <!--<field name="location_listing_more_link" type="radio" default="1" label="MORE_LINK_LABEL" description="DISPLAY MORE LINK DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    <!--<field name="@spacer" type="spacer" default="" label="" description="" menu="hide"/>
+    <field name="@webmapplus" type="webmapplushead" default="LOCATION PAGE SETTINGS" menu="hide"/>-->
+  </fieldset>
+  <fieldset name='wmp_loc_page' label='Location Page' description=''>
+    <field name="location_page_street_view" type="radio" default="1" label="Display Steet View" description="Show Street View for you location(s)">
+      <!--<field name="location_page_street_view" type="radio" default="1" label="STREET_VIEW_LABEL" description="DISPLAY_STREET_VIEW_DESC">-->
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </field>
+    
+    <field name='hide_directions' type='radio' default='0' label="Hide Directions" description="Hide all of the directions stuff from the locations page.">
+      <option value="1">Hide</option>
+      <option value="0">Show</option>
+    </field>
+    
+  </fieldset>
+  <fieldset name='wmp_photo' label='Location Photos Settings' description=''>
+    <!--<field name="@spacer" type="spacer" default="" label="" description="" menu="hide"/>
+    <field name="@webmapplus" type="webmapplushead" default="LOCATION_PHOTO_RESIZE_SETTINGS_LABEL" menu="hide"/>-->
+    <field type="text" name="picture_width" size="10" default="300" label="Width" description="Default width for photos (in pixels)" menu="hide"/>
+    <!--<field type="text" name="picture_width" size="10" default="300" label="WIDTH_LABEL" description="WIDTH_DESC" menu="hide"/>-->
+    <field type="text" name="picture_height" size="10" default="225" label="Height" description="Default height for photos (in pixels)" menu="hide"/>
+    <!--<field type="text" name="picture_height" size="10" default="225" label="HEIGHT_LABEL" description="HEIGH_DESC" menu="hide"/>-->
+    <!--</params>-->
+    <field name='wmp_hide_no_pic' type='radio' default='0' label="Hide 'No Picture'" description="Hide the 'No Picture' image if an image has not been provided for the location.">
+      <option value="1">Hide</option>
+      <option value="0">Show</option>
+    </field>
+  </fieldset>
+</config>

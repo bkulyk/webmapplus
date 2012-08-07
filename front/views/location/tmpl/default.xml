@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Location Layout">
+		<message>
+			<![CDATA[STANDARD LOCATION LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Standard Location Layout</name>
+		<description>STANDARD LOCATION LAYOUT DESC</description>
+		<url addpath="/administrator/components/com_webmapplus/elements">
+			<param name="id" type="location" default="0" label="Select Location" description="A location" />
+		</url>
+		<params>
+		</params>
+	</state>
+</metadata>

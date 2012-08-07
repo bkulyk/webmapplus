@@ -1,0 +1,200 @@
+div#gmap_results {
+	width: 200px;
+	float:left;
+}
+
+div#gmaps_category_form {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+div#gmaps_search_form{
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+.webmapplus-map div#gmap{
+	margin-left: 210px;
+}
+
+.webmapplus_module{
+	text-align: left;
+}
+
+div#directions-mode-toggle{
+	font-size: 85%;
+}
+
+div.directions-label, div.directions-example, div#location-hover-instructions{
+	color: grey;
+	font-size:85%;
+	padding-top:0.2em;
+}
+
+div#gmap {
+	height: 450px;
+	border: 1px solid #CCC; 
+	position: relative;
+}
+
+div#gmap-sv div#sv embed{
+	border: 1px solid #CCC
+}
+
+div#gmap-sv {
+	position: relative;
+}
+
+h3.sv-unavailable{
+	position:relative;
+	text-align:center;
+	top:45%;
+}
+
+a#sv-close{
+	position:absolute;
+	display: none;
+	right:-10px;
+	top:-10px;
+	width:30px;
+	height:30px;
+	background: url(../images/closebox.png) no-repeat 50% 50%;
+	text-indent: -300000px;
+}
+
+div.location-listing{
+	border: 1px solid #CCC;
+	background: #EEE;
+	margin: 1em 0;	
+}
+
+div.location-listing div.location-photo{
+	float: left;
+	padding: 3px;
+}
+
+div.location-listing div.location-marker{
+	float: right;
+}
+
+div.location-listing div.location-details{
+	margin-left: 56px;
+	margin-right: 26px;
+	text-align: left;
+}
+
+div.location-listing div.location-photo img{
+	width: 50px;
+}
+
+div.location-listing ul{
+	list-style: none;
+	padding: 0;
+}
+
+div#location-balloon div#location-details{
+	float: left;
+	text-align: left;
+}
+
+div#location-balloon div#location-photo{
+	float: left;
+}
+
+div#location-balloon div#location-photo img{
+	width: 150px;
+	padding: 10px;
+}
+
+div#location-sv-pano{
+	width: 420px;
+	height: 220px;
+}
+
+div#location-sv{
+	margin: 10px;
+	display: none;
+}
+
+div#location-directions{
+	height: 0;
+	overflow: hidden;
+	_width: 200px;
+}
+
+div.location-listing div.location-marker{
+	width: 26px;
+	padding-top: 3px;
+}
+
+div.location-listing div.location-name{
+	font-weight: bold;
+}
+
+div.location-page{
+	padding-bottom: 10px;
+}
+
+div.location-page div.location-details{
+	margin-right: 290px;
+}
+
+div.location-page div.location-photo{
+	float: right;
+	padding: 10px;
+	padding-right: 0;
+}
+
+div.location-page div.location-photo img{
+	width: 270px;	
+}
+
+div.location-page div#directions-label-end{
+	display: none;
+}
+
+div#location-contact{
+	margin: 15px;
+}
+
+form#location-contact-form label{
+	width: 100px;
+	display: block;
+	float: left;
+}
+
+form#location-contact-form input, form#location-contact-form textarea{
+	float: left;	
+	width: 230px;
+}
+
+form#location-contact-form .submit{
+	width: auto;
+	float: right;
+}
+
+form#location-contact-form div.form-row{
+	margin: 10px 0;
+	width: 340px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}

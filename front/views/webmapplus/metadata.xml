@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Locations Map">
+		<message><![CDATA[Displays all locations as markers on a map.]]></message>
+	</view>
+</metadata>
